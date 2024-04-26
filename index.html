@@ -7,19 +7,19 @@
       <title>Centered counter</title>
     </head>
   <body>
-      <main>
+      <main role="main">
         <div class="controls">
           <div class="control">
             <label for="start_at">Start at</label>
-            <input name="start_at" value="0" id="start_at"/>
+            <input name="start_at" value="0" id="start_at" type="number" aria-label="Start at value"/>
           </div>
-        <div class="control">
-          <label for="step">Step</label>
-          <input name="step" value="1" id="step"/>
-        </div>
+          <div class="control">
+            <label for="step">Step</label>
+            <input name="step" value="1" id="step" type="number" aria-label="Step value"/>
+          </div>
         </div>
       </div>
-      <button class="count_button">
+      <button class="count_button" aria-label="Increment Counter by Step">
         <span class="current_count">
           0
         </span>
